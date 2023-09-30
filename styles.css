@@ -12,9 +12,36 @@
     5. Media Queries
 ////////////////////////*/
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap');
+
 /* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-purple: #5722CD;
+    --color-blue: #4845E4;
+    --color-pink: #ED4385;
+    --color-black: #0C0C0C;
+    --color-lightpurple: #F2F0FF;
+    --color-lightgrey: #F3F6F9;
+    --color-grey: #7A7A7A;
+}
 
 /* ------------------------------- 2. Typography ----------------------------------- */
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-black);
+
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
