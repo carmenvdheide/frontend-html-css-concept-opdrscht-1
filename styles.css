@@ -36,16 +36,38 @@
 p {
     font-family: 'Roboto', sans-serif;
     color: var(--color-black);
-
 }
 
 h1, h2, h3 {
     font-family: 'Merriweather', serif;
 }
 
+h1 {
+    font-weight: 300;
+}
+h3 {
+    font-weight: 400;
+}
+
+
+
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
+
+button {
+    background-color: var(--color-pink);
+    color: white;
+    font-size: 20px;
+    padding: 30px 45px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
 
 /* --------------- 3.2 Other --------------------------- */
 
@@ -53,6 +75,99 @@ h1, h2, h3 {
 
 /* --------------- 4.1 Header ------------------------- */
 
+header {
+    background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(87,34,205,1) 100%);
+    display: flex;
+    flex-direction: column;
+    height: 880px;
+}
+
+nav {
+    padding: 36px 70px;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 25px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 67px;
+}
+
+.header-inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 405px;
+    height: 100%;
+    position: relative;
+    border: 2px dashed pink;
+}
+
+.header-h1 {
+    padding: 100px 0 40px 0;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+.header-p {
+    color: white;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.header-inner-container button {
+    margin: 35px
+}
+
+.header-img {
+    position: absolute;
+    bottom: 0;
+}
+
+
 /* --------------- 4.2 Introduction ------------------- */
+
+.introduction {
+    border: 2px dashed red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center;
+    margin: 0px 405px;
+    height: 810px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 60px;
+    padding-top: 55px;
+}
+
+.introduction h2 {
+    border: green dashed 2px;
+    color: var(--color-purple);
+    font-size: 40px;
+}
+.headings-intro {
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+
+.introduction p {
+    border: 2px solid blue;
+
+    font-size: 25px;
+}
+
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
