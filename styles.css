@@ -45,6 +45,11 @@ h1, h2, h3 {
 h1 {
     font-weight: 300;
 }
+
+h2 {
+    font-size: 40px;
+}
+
 h3 {
     font-weight: 400;
 }
@@ -53,6 +58,9 @@ h3 {
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
+.inner-container {
+    margin: 0 405px;
+}
 /* --------------- 3.1 Reusables ----------------------- */
 
 button {
@@ -67,6 +75,7 @@ button {
 
 a {
     text-decoration: none;
+    color: var(--color-purple);
 }
 
 /* --------------- 3.2 Other --------------------------- */
@@ -101,11 +110,11 @@ ul {
     gap: 67px;
 }
 
-.header-inner-container {
+.header-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 405px;
+
     height: 100%;
     position: relative;
     border: 2px dashed pink;
@@ -124,8 +133,9 @@ ul {
     font-weight: 300;
 }
 
-.header-inner-container button {
-    margin: 35px
+.header-div button {
+    margin: 35px;
+
 }
 
 .header-img {
@@ -142,7 +152,6 @@ ul {
     flex-direction: column;
     justify-content: space-around ;
     align-items: center;
-    margin: 0px 405px;
     height: 810px;
     text-align: center;
     position: relative;
@@ -164,10 +173,87 @@ ul {
 
 .introduction p {
     border: 2px solid blue;
-
     font-size: 25px;
 }
 
+/* --------------- 4.3 Work ------------------- */
 
+section.work{
+    background-color: var(--color-lightgrey);
+    padding-top: 120px;
+    padding-bottom: 140px;
+}
+
+.work-inner-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
+    border: 3px solid lightblue;
+    gap: 135px;
+}
+
+.work-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.work-article-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.work-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px  0;
+    margin: 100px 65px;
+    border: 2px solid red;
+}
+.work span img {
+    width: 100%;
+}
+
+.image-wrapper-rolling-stone {
+    flex-basis: 1000px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.image-wrapper-variety {
+    flex-basis: 1080px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.image-wrapper-worth {
+    flex-basis: 1000px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.squiggle-line {
+    width: 70px;
+}
+
+.work a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-purple);
+    letter-spacing: 2px;
+}
+
+.work-paragraph p {
+    max-width: 490px;
+    font-size: 25px;
+}
+
+/* --------------- 4.4 Services ------------------- */
+
+
+/* --------------- 4.5 Footer ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
