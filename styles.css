@@ -44,6 +44,9 @@ h1, h2, h3 {
 
 h1 {
     font-weight: 300;
+    font-size: 60px;
+    text-align: center;
+    color: white;
 }
 
 h2 {
@@ -114,7 +117,6 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     height: 100%;
     position: relative;
     border: 2px dashed pink;
@@ -122,9 +124,6 @@ ul {
 
 .header-h1 {
     padding: 100px 0 40px 0;
-    font-size: 60px;
-    text-align: center;
-    color: white;
 }
 
 .header-p {
@@ -196,12 +195,14 @@ section.work{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: 2px solid green;
 }
 
 .work-article-reverse {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    border: 2px solid green;
 }
 
 .work-paragraph {
@@ -253,7 +254,138 @@ section.work{
 
 /* --------------- 4.4 Services ------------------- */
 
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner-container-services {
+    border: 3px dashed red;
+    height: 1100px;
+    margin: 120px 170px 0 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.service-article {
+    border: 2px solid var(--color-purple);
+    max-width: 490px;
+    max-height: 450px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.service-image {
+    max-width: 95px;
+    margin-bottom: 10px;
+}
+
+.service-heading {
+    color: var(--color-purple);
+    font-size: 30px;
+}
+
+.service-p {
+    color: var(--color-grey);
+    font-size: 20px;
+}
+
 
 /* --------------- 4.5 Footer ------------------- */
+
+.footer {
+    background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(87,34,205,1) 100%);
+}
+
+.inner-container-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 150px 0;
+    margin: 0 420px;
+    max-height: 1175px;
+    border: 2px solid yellow;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    font-size: 25.5px;
+    font-weight: 300;
+    margin: 30px 0 50px 0;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+}
+
+#name-field, #email-field{
+    flex-basis: 75px;
+}
+
+
+#message-field::placeholder {
+    padding: 10px;
+}
+
+ label {
+     font-weight: 700;
+     font-size: 20px;
+ }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#message-field::placeholder {
+    padding: 25px;
+}
+
+
+button {
+    align-self: center;
+    padding: 30px 100px;
+}
+
+.footer-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    ;
+}
+
+footer {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    height: 80px;
+    padding: 25px;
+}
+
+
+
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
